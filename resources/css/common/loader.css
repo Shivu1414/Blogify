@@ -1,0 +1,29 @@
+/* ✅ Top Loader Base */
+.top-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    z-index: 9999;
+
+    background: linear-gradient(
+        90deg,
+        #1e3a8a, #0061ff, #00ffff, #1000ff, #1e3a8a
+    );
+
+    background-size: 200% 100%;
+    animation: shine 1.2s linear infinite;
+
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.9);
+    transition: width 0.5s ease-out;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
